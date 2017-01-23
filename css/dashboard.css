@@ -223,11 +223,12 @@ border-radius: 0px;
   margin-bottom: -38px
 }
 .page-header {
-  margin-top: 20px;
+  margin-top: 15px;
   background-color: rgba(53,29,25,0.25);
   padding-top: 1px;
   padding-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 10px
+  width:100%;
 }
 @media (min-width: 768px) {
   .sidebar {
@@ -285,6 +286,11 @@ border-radius: 0px;
     padding-top: 1px;
     padding-bottom: 0px;
     padding-left: 10px;
+    margin-right: 0px;
+  }
+  .navbar-fixed-top {
+    padding: 15px;
+    border-color: #999;
   }
   .navbar-fixed-top {
     padding: 15px;
