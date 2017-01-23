@@ -113,11 +113,11 @@
             <div class="content class" ng-repeat="app in apps track by $index">
               <div ng-if = "searchTerm.length==0" class="span2 animated fadeIn" id="{{app.applicationCategory | nospace}}">
                 <div class="reveal">
-                  <img ng-src="../{{ app.name }}/screenshot.png" />
+                  <img ng-src="{{ app.name }}/screenshot.png" />
                   <div class="hidden">
                     <div class="caption">
                       <div class="centered">
-                        <p><a href='../{{ app.name }}'>{{ app.headline | uppercase}}</a></p>
+                        <p><a href="{{ app.name }}'>{{ app.headline | uppercase}}</a></p>
                         <p class="color-black">{{ app.alternativeHeadline }}</p>
                         <br/>
                         <p class="color-black">Author: <a href='{{ app.author.url }}'>{{ app.author.name | uppercase }}</a></p>
@@ -129,11 +129,11 @@
 
               <div ng-if = "searchTerm.length>0 && ((app.name.toUpperCase().indexOf(searchTerm.toUpperCase())!=-1) || (app.headline.toUpperCase().indexOf(searchTerm.toUpperCase())!=-1) || ((app.author.name.toUpperCase().indexOf(searchTerm.toUpperCase())!=-1)))" class="span2 animated fadeIn" id="{{app.applicationCategory | nospace}}">
                 <div class="reveal">
-                  <img ng-src="../{{ app.name }}/screenshot.png" />
+                  <img ng-src="{{ app.name }}/screenshot.png" />
                   <div class="hidden">
                     <div class="caption">
                       <div class="centered">
-                        <p><a href='../{{ app.name }}'>{{ app.headline | uppercase}}</a></p>
+                        <p><a href='{{ app.name }}'>{{ app.headline | uppercase}}</a></p>
                         <p class="color-black">{{ app.alternativeHeadline }}</p>
                         <br/>
                         <p class="color-black">Author: <a href='{{ app.author.url }}'>{{ app.author.name | uppercase }}</a></p>
