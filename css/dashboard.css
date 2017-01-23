@@ -74,12 +74,13 @@ ul.request {
   -webkit-align-items: stretch;
   align-items: stretch;
   margin-top:8px;
+  width:100%;
   
 }
 .search input{
-  width:198px;
   height: 36px;
   padding:8px;
+  width:100%;
 }
 .search input:focus {
   border-color: rgb(119,119,119);
@@ -291,10 +292,13 @@ border-radius: 0px;
   .navbar-fixed-top {
     padding: 15px;
     border-color: #999;
+<<<<<<< HEAD
   }
   .navbar-fixed-top {
     padding: 15px;
     border-color: #999;
+=======
+>>>>>>> mobile-search
   }
 }
 .sidebar{
