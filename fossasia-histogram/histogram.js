@@ -22,8 +22,6 @@ app.controller("histogram", function($scope, $http) {
              points.push({ day: key, value: response.data.aggregations.created_at[key] });
            }
 
-           console.log(points);
-
            new Morris.Line({
              // ID of the element in which to draw the chart.
              element: 'myfirstchart',
